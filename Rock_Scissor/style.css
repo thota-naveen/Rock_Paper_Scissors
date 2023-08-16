@@ -27,7 +27,8 @@
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
-  background: radial-gradient(at top, var(--bg-grad-1), var(--bg-grad-2));
+  /* background: radial-gradient(at top, var(--bg-grad-1), var(--bg-grad-2)); */
+  background-color: #8CC461;
   min-height: 100vh;
   text-transform: uppercase;
   color: var(--light-text);
@@ -46,7 +47,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 150px;
-  border: 3px solid var(--outline);
+  border: 3px solid white;
   border-radius: 20px;
   padding: 1rem 1.4rem 1rem 2rem;
 }
@@ -167,7 +168,6 @@ body {
   grid-area: rock;
 }
 
-/* Results */
 .results {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

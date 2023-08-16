@@ -14,12 +14,12 @@ const CHOICES = [
     beats: "rock",
   },
   {
-    name: "scissors",
+    name: "scissor",
     beats: "paper",
   },
   {
     name: "rock",
-    beats: "scissors",
+    beats: "scissor",
   },
 ];
 const choiceButtons = document.querySelectorAll(".choice-btn");
@@ -60,7 +60,7 @@ function displayResults(results) {
     setTimeout(() => {
       resultDiv.innerHTML = `
         <div class="choice ${results[idx].name}">
-          <img src="images/icon-${results[idx].name}.svg" alt="${results[idx].name}" />
+          <img src="images/${results[idx].name}.jpg" alt="${results[idx].name}" />
         </div>
       `;
     }, idx * 1000);
